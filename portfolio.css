@@ -35,8 +35,8 @@ HEADER
 ----------------------*/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1093&q=80);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -45,18 +45,27 @@ header {
 .hero-text-box {
   width: 1140px;
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #09fbd3;
 }
 
 h1 {
-  margin-bottom: 15px;
-  font-size: 280%;
+  margin-bottom: 10px;
+  font-size: 300%;
   word-spacing: 4px;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-size: 150%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 100;
 }
 
 #nav-arrow {
@@ -88,7 +97,8 @@ NAV
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #fd9644;
+  color: #be00fe;
+  border-bottom: 2px solid #09fbd3;
 }
 
 /*----------------------
@@ -106,38 +116,38 @@ BUTTONS
 
 .btn-full:link,
 .btn-full:visited {
-  color: #fff;
-  background-color: #fd9644;
-  border: 1px solid #fd9644;
+  color: black;
+  background-color: #09fbd3;
+  border: 1px solid #09fbd3;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #fd9644;
-  color: #fd9644;
+  border: 1px solid #09fbd3;
+  color: #09fbd3;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #fa7003;
+  background-color: #be00fe;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid #fa7003;
+  border: 1px solid #be00fe;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #fa7003;
-  color: #fff;
+  border: 1px solid #be00fe;
+  color: black;
 }
 
 .btn-submit {
-  color: #fff;
-  background-color: #fd9644;
-  border: 1px solid #fd9644;
+  color: black;
+  background-color: #09fbd3;
+  border: 1px solid #09fbd3;
   margin-right: 15px;
   border-radius: 220px;
   padding: 10px 30px;
@@ -157,7 +167,7 @@ h2:after {
   display: block;
   height: 2px;
   content: " ";
-  background-color: #fd9644;
+  background-color: #09fbd3;
   margin: 0 auto;
   margin-top: 20px;
   width: 15%;
@@ -185,11 +195,6 @@ SECTION-SKILLS
   text-align: center;
   margin-bottom: 15px;
   margin-top: 10px;
-}
-
-.arrow {
-  color: #fd9644;
-  display: block;
 }
 
 .html {
@@ -221,10 +226,6 @@ SECTION-SKILLS
 /*----------------------
 SECTION-WORK
 ----------------------*/
-.section-work h1 {
-  text-align: center;
-  margin-bottom: 400px;
-}
 
 /*----------------------
 SECTION-PROCESS
@@ -232,7 +233,7 @@ SECTION-PROCESS
 .process-icon {
   font-size: 300%;
   display: block;
-  color: #fd9644;
+  color: #be00fe;
   width: 100%;
   text-align: center;
   margin-bottom: 15px;
@@ -240,9 +241,11 @@ SECTION-PROCESS
 }
 
 /*----------------------
-SECTION-PROCESS
+SECTION-CONTACT
 ----------------------*/
-
+.section-contact {
+  padding-bottom: 0;
+}
 footer {
   background-color: #333;
   padding: 40px;
@@ -282,11 +285,11 @@ footer {
 }
 
 .github:hover {
-  color: #3b5998;
+  color: #ffd33d;
 }
 
-.twitter:hover {
-  color: #00aced;
+.linkedin:hover {
+  color: #0e76a8;
 }
 
 .google:hover {
@@ -307,4 +310,126 @@ footer p {
 .contact-info {
   color: white;
   list-style: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1170px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .main-nav {
+    padding-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .skills {
+    width: 100%;
+  }
+
+  .process {
+    width: 100%;
+  }
+}
+
+/* ----------------------
+CARDS
+---------------------- */
+
+.section-work {
+  background: #09fbd3;
+  justify-content: center;
+}
+
+.section-work h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.section-work h1:after {
+  display: block;
+  height: 2px;
+  content: " ";
+  background-color: #be00fe;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 15%;
+}
+
+.card-box {
+  position: relative;
+  align-items: center;
+  margin-left: 6.2%;
+  width: 25%;
+  height: 500px;
+  margin-bottom: 100px;
+  background: #000;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  float: left;
+}
+
+.card-box .imgBx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card-box:hover .imgBx img {
+  opacity: 0;
+}
+
+.card-box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-box:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.card-box .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.card-box .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.card-box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
 }
