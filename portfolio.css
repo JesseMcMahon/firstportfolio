@@ -371,6 +371,15 @@ CARDS
   float: left;
 }
 
+.built-with-list {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.built-with-list-item {
+  margin-top: 10%;
+}
+
 .card-box .imgBx {
   position: relative;
   top: 0;
