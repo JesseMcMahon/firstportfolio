@@ -314,6 +314,17 @@ footer p {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1300px) {
+  .projects {
+    width: 80% !important;
+    margin-left: 9% !important;
+  }
+
+  .how-it-works {
+    display: inline-block;
+  }
+}
+
 @media only screen and (max-width: 1170px) {
   .hero-text-box {
     width: 100%;
