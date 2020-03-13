@@ -339,10 +339,12 @@ footer p {
 @media only screen and (max-width: 550px) {
   .skills {
     width: 100% !important;
+    padding-right: 5% !important;
   }
 
   .process {
     width: 100% !important;
+    padding-right: 5% !important;
   }
 }
 
