@@ -305,7 +305,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
   .skills {
     width: 100% !important;
     padding-right: 5% !important;
