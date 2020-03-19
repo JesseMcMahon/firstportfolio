@@ -311,6 +311,10 @@ footer p {
     padding-right: 5% !important;
   }
 
+  .hero-title {
+    font-weight: 300;
+  }
+
   .process {
     width: 100% !important;
     padding-right: 5% !important;
