@@ -50,6 +50,11 @@ header {
   color: #09fbd3;
 }
 
+.hero-text-box h3 {
+  color: #be00fe;
+  font-weight: 350 !important;
+}
+
 h1 {
   margin-bottom: 10px;
   font-size: 300%;
